@@ -1,4 +1,6 @@
-# teamlead-app
+# gifftery-app
+
+[Задание описано тут](https://github.com/giftery-lobas/frontend-test)
 
 > My breathtaking Nuxt.js project
 
