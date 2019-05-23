@@ -1,6 +1,7 @@
 
 // Categories
 export const categories = state => state.category.list
+export const categoryAll = ({ category: { all } }) => all
 export const category = ({ category: { selected } }) => selected
 
 // Brands

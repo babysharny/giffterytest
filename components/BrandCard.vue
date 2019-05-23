@@ -13,7 +13,7 @@
           p.subtitle.is-6 @johnsmith
       .content
         | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        | Phasellus nec iaculis mauris. 
+        | Phasellus nec iaculis mauris.
         a @bulmaio
         | .
         a(href='#') #css

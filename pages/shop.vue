@@ -7,12 +7,11 @@
           aside.menu
             p.menu-label Категории
             ul.menu-list
-              li(v-for='c in categories')
+              li(v-for="c in categories")
                 a(
-                  @click='selectCategory(c)'
+                  @click="selectCategory(c)"
                   :class="{ 'is-active': c == category }"
                   ) {{ c.title }}
-        
         //- Products
         .column.is-9
           h1.title {{ category.title }}
@@ -44,7 +43,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex';
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   layout: 'shop',
@@ -55,17 +54,18 @@ export default {
   async created() {
     await this.fetchCategories()
     await this.fetchBrands()
-    this.category = this.categories[0]
+    this.selectCategory(this.categoryAll)
   },
   computed: {
     ...mapGetters([
       'categories',
       'category',
+      'categoryAll',
       'brands',
       'faces',
       'face',
       'cart'
-    ]),
+    ])
   },
   methods: {
     ...mapActions([

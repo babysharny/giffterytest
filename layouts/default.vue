@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      showMenu: false,
+      showMenu: false
     }
   },
   methods: {
